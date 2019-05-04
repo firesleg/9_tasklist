@@ -1,0 +1,7 @@
+<h1>id: <%= @task.id %>のタスクリスト！！</h1>
+
+<p><%= @task.content %></p>
+
+<%= link_to "一覧へ！！", tasks_path %> 
+<%= link_to "間違えちゃったの？♡！！", edit_task_path(@task) %> 
+<%= link_to "消す♡！！", @task, method: :delete, data: {confirm: "いいのね？"} %> 
